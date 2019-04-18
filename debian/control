@@ -1,0 +1,11 @@
+Source: kubernetes-deploy
+Priority: extra
+Maintainer: OCF Staff <root@ocf.berkeley.edu>
+Standards-Version: 4.3.0
+Section: ruby
+
+Package: kubernetes-deploy
+Priority: extra
+Architecture: all
+Depends: ruby
+Description: Shopify's kubernetes-deploy script
