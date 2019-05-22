@@ -1,4 +1,4 @@
-FROM docker.ocf.berkeley.edu/theocf/debian:stretch
+FROM docker.ocf.berkeley.edu/theocf/debian:buster
 
 ARG KUBE_DEPLOY_TAG
 
