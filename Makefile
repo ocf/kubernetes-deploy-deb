@@ -1,4 +1,4 @@
-KUBE_DEPLOY_TAG := 0.26.4
+KUBE_DEPLOY_TAG := 0.26.7
 
 .PHONY: build-image
 build-image:
