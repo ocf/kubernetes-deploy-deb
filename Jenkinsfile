@@ -1,5 +1,5 @@
 packagePipeline(
-    dists: ['buster', 'bullseye'],
+    dists: ['buster', 'bullseye', 'bookworm'],
 )
 
 //vim: ft=groovy
