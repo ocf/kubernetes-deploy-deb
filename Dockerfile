@@ -14,7 +14,6 @@ RUN apt-get update \
 	    debhelper
 
 # install bundler
-RUN gem update --system --no-document
 RUN gem install bundler -v 2.0 --no-document
 
 
