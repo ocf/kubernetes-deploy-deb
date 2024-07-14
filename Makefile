@@ -1,9 +1,9 @@
-KUBE_DEPLOY_TAG := 0.31.1
+KRANE_DEPLOY_TAG := 1.0.0
 
 .PHONY: build-image
 build-image:
-	docker build --build-arg "KUBE_DEPLOY_TAG=${KUBE_DEPLOY_TAG}" \
-	        -t kubernetes-deploy-build .
+	docker build --build-arg "KRANE_DEPLOY_TAG=${KRANE_DEPLOY_TAG}" \
+	        -t krane-build .
 
 .PHONY: package_%
 package_%: build-image
@@ -12,7 +12,7 @@ package_%: build-image
 		-e "DIST_TAG=$*" \
 		--user $(shell id -u ${USER}):$(shell id -g ${USER}) \
 		-v $(CURDIR)/dist_$*:/mnt:rw \
-		kubernetes-deploy-build
+		krane-build
 
 .PHONY: clean
 clean:

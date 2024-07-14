@@ -1,11 +1,11 @@
-Source: kubernetes-deploy
+Source: krane
 Priority: extra
 Maintainer: OCF Staff <root@ocf.berkeley.edu>
 Standards-Version: 4.3.0
 Section: ruby
 
-Package: kubernetes-deploy
+Package: krane
 Priority: extra
 Architecture: all
 Depends: ruby
-Description: Shopify's kubernetes-deploy script
+Description: Shopify's krane script

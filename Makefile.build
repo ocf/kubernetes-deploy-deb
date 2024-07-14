@@ -1,7 +1,7 @@
 prefix=/usr
 
 install:
-	find ./bundle -type f -exec install -Dm 0755 {} $(DESTDIR)$(prefix)/share/kubernetes-deploy/{} \;
-	find ./bin -type f -exec sed -i 's_\.\./\.\./bundle_$(DESTDIR)$(prefix)/share/kubernetes-deploy/bundle_g' {} \;
-	find ./bin -type f -name 'kubernetes-*' -exec install -Dm 0755 {} $(DESTDIR)$(prefix)/{} \;
+	find ./bundle -type f -exec install -Dm 0755 {} $(DESTDIR)$(prefix)/share/krane/{} \;
+	find ./bin -type f -exec sed -i 's_\.\./\.\./bundle_$(DESTDIR)$(prefix)/share/krane/bundle_g' {} \;
+	find ./bin -type f -name 'krane*' -exec install -Dm 0755 {} $(DESTDIR)$(prefix)/{} \;
 
