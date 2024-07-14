@@ -1,4 +1,4 @@
-KRANE_DEPLOY_TAG := 1.0.0
+KRANE_DEPLOY_TAG := 2.4.9
 
 .PHONY: build-image
 build-image:
